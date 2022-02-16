@@ -136,8 +136,8 @@ bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
 
 # switch to prev and next workspace
-bindsym $mod+Shift+Left workspace prev
-bindsym $mod+Shift+Right workspace next
+bindsym $mod+ctrl+Left workspace prev
+bindsym $mod+ctrl+Right workspace next
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
@@ -194,3 +194,7 @@ bar {
         status_command i3status
 }
 
+
+# window defaults
+default_border pixel 1
+default_floating_border pixel 1
